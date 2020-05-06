@@ -9,19 +9,19 @@ import javax.persistence.Table;
 @Table(name = "T_USER")
 public class User {
     @Id
-    @Column(name = "USER_ID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "USERNAME")
+    @Column(name = "username")
     private String username;
 
-    @Column(name = "PASSWORD")
+    @Column(name = "passwd")
     private String passwd;
 
-    @Column(name = "CRATE_TIME")
+    @Column(name = "create_time")
     private Date createTime;
 
-    @Column(name = "STATUS")
+    @Column(name = "status")
     private String status;
 
     /**

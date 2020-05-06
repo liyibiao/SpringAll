@@ -56,25 +56,25 @@ public class UserControllerTest {
 //		.andExpect(MockMvcResultMatchers.status().isOk())
 //		.andExpect(MockMvcResultMatchers.jsonPath("$.username").value("scott"))
 //		.andDo(MockMvcResultHandlers.print());
-		
+//
 //		String jsonStr = "{\"username\":\"Dopa\",\"passwd\":\"ac3af72d9f95161a502fd326865c2f15\",\"status\":\"1\"}";
 		
-		User user = new User();
-		user.setUsername("Dopa");
-		user.setPasswd("ac3af72d9f95161a502fd326865c2f15");
-		user.setStatus("1");
-		
-		String userJson = mapper.writeValueAsString(user);
+//		User user = new User();
+//		user.setUsername("Dopa");
+//		user.setPasswd("ac3af72d9f95161a502fd326865c2f15");
+//		user.setStatus("1");
+//
+//		String userJson = mapper.writeValueAsString(user);
 		
 		
 //		mockMvc.perform(MockMvcRequestBuilders.post("/user/save").content(jsonStr.getBytes()));
 		
-		mockMvc.perform(
-				MockMvcRequestBuilders.post("/user/save")
-				.contentType(MediaType.APPLICATION_JSON_UTF8)
-				.content(userJson.getBytes()))
-		.andExpect(MockMvcResultMatchers.status().isOk())
-		.andDo(MockMvcResultHandlers.print());
+//		mockMvc.perform(
+//				MockMvcRequestBuilders.post("/user/save")
+//				.contentType(MediaType.APPLICATION_JSON_UTF8)
+//				.content(userJson.getBytes()))
+//		.andExpect(MockMvcResultMatchers.status().isOk())
+//		.andDo(MockMvcResultHandlers.print());
 		
 //		mockMvc.perform(MockMvcRequestBuilders.get("/hello?name={name}","mrbird"));
 //		mockMvc.perform(MockMvcRequestBuilders.post("/user/{id}", 1));

@@ -39,7 +39,7 @@ public class User implements Serializable {
 	@JsonView(AllUserFieldView.class)
 	private String password;
 
-	// @JsonProperty("bth")
+//	 @JsonProperty("bth")
 	// @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	@JsonView(AllUserFieldView.class)
 	private Date birthday;
